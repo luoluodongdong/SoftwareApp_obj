@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>startScripts</key>
+	<dict>
+		<key>0</key>
+		<string>killall python</string>
+		<key>1</key>
+		<string>ls /dev/tty.*</string>
+	</dict>
+	<key>yield</key>
+	<dict>
+		<key>Input</key>
+		<integer>0</integer>
+		<key>Pass</key>
+		<string>0</string>
+	</dict>
+	<key>cfg</key>
+	<dict>
+		<key>SWname</key>
+		<string>SMT TEST Software</string>
+		<key>SWversion</key>
+		<string>1.0.0</string>
+		<key>TestPlanFile</key>
+		<string>TestPlan.csv</string>
+		<key>PassWord</key>
+		<string>luxshare</string>
+	</dict>
+	<key>Devices</key>
+	<dict>
+		<key>Device1</key>
+		<dict>
+			<key>Description</key>
+			<string>DUT Serial Port</string>
+			<key>Name</key>
+			<string>DUT</string>
+			<key>Enable</key>
+			<true/>
+			<key>ID</key>
+			<string>1000</string>
+			<key>Type</key>
+			<string>SERIAL</string>
+			<key>Addr</key>
+			<string>wchusbserial14210</string>
+			<key>BaudRate</key>
+			<string>9600</string>
+		</dict>
+		<key>Device2</key>
+		<dict>
+			<key>Description</key>
+			<string>Instrument DMM Port</string>
+			<key>Name</key>
+			<string>DMM</string>
+			<key>Enable</key>
+			<false/>
+			<key>ID</key>
+			<string>2000</string>
+			<key>Type</key>
+			<string>INSTR</string>
+			<key>Addr</key>
+			<string>ASRL9::INSTR</string>
+			<key>BaudRate</key>
+			<string>9600</string>
+		</dict>
+		<key>Device3</key>
+		<dict>
+			<key>Description</key>
+			<string>Python socket client</string>
+			<key>Name</key>
+			<string>PYClient</string>
+			<key>Enable</key>
+			<true/>
+			<key>ID</key>
+			<string>3000</string>
+			<key>Type</key>
+			<string>SOCKET</string>
+			<key>Mode</key>
+			<string>client</string>
+			<key>IP</key>
+			<string>127.0.0.1</string>
+			<key>Port</key>
+			<string>8002</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
